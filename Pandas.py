@@ -14,7 +14,7 @@ x = pd.read_csv("filePath")
 # Exporting a dataframe
 x.to_csv("y", index=False)
 
-#Describing data  ---- () for functions    without () for Attributes
+#Describing data  ---- with () for functions    without () for Attributes
 x.dtype #prints the dtype of each column
 x["column name"].dtype #prints the dtype of the chosen column
 x.columns #shows you the column's names
