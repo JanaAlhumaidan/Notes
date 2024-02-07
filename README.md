@@ -1,3 +1,3 @@
-<h2>My notes about any tool or language I'm learning <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="30"> </h2>
+<h2>My notes on any tool or language I am currently learning or will learn in the future. <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="45"> </h2>
 
-I will continually update this repository with notes on anything I learn "now and in the future," making it a comprehensive reference for essential functions and commands.
+I will consistently update this repository with notes on anything I learn, ensuring it serves as a comprehensive reference for fundamental functions and commands.
