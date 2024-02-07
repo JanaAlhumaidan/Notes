@@ -1,3 +1,4 @@
+```python
 #Laibrary: 
 import pandas as pd
 import matplotlib.pyplot as plt #if needed
@@ -46,5 +47,4 @@ pd.crosstab(x["column name1"], x["column name2"])
 x["column name"].plot()
 x["column name"].hist()
 
-
-
+```
