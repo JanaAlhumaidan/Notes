@@ -26,21 +26,22 @@ x.sum()
 x["column name"].sum() #if I want a specific column
 len(x) #no. of rows
 
-#changing the dtype
-x['column name'] = x['column name'].astype(str)
-x["column name"] = x["column name"].str.replace('[\$\,\.]', '') #replacing a char in a column
-x["column name"] = x["column name"].str.replace('[\$\,\.]', '').astype(int) #replacing & changing the dtype
-
 #Viewing and Selecting
 x.head() #prints the first 5 rows 
 x.head(y) # y = number >> if I want a specific no. of rows
 x.tail() #last 4 rows
 x.iloc[3] # .iloc refers to position
 x.loc[3] # .loc refers to index
+x.columnName #prints the data in this column >> will not work if the column name have a space
 x["column name"] #prints the data in this column
 x[x["column name"] == "object"] #prints the rows that has the chosen object in the chosen column
 x[x["column name"] > 100000] #prints the rows that goes with the rule in the chosen column
 pd.crosstab(x["column name1"], x["column name2"])
+
+#changing the dtype
+x['column name'] = x['column name'].astype(str)
+x["column name"] = x["column name"].str.replace('[\$\,\.]', '') #replacing a char in a column
+x["column name"] = x["column name"].str.replace('[\$\,\.]', '').astype(int) #replacing & changing the dtype
 
 #Graphs
 x["column name"].plot()
