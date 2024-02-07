@@ -45,6 +45,3 @@ pd.crosstab(x["column name1"], x["column name2"])
 #Graphs
 x["column name"].plot()
 x["column name"].hist()
-
-
-

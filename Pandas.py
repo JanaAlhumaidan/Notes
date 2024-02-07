@@ -47,4 +47,5 @@ x["column name"].plot()
 x["column name"].hist()
 
 
-#test
+
+>>>>>>> 3b2505c35d8c8492b71d1c66aacfaed69ce0c207
