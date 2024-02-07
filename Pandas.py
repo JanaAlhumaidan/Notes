@@ -2,19 +2,19 @@
 import pandas as pd
 import matplotlib.pyplot as plt #if needed
 
-#2 main Dtypes: 
+#2 main Data types: 
 #Series:
 x = pd.Series(["x", "y", "z"])
-# dataFarme 2D
+# dataFarme (2D)
 x = pd.DataFrame({"column name1": seriesName, "column name2": seriesName})
 
 #importing Data
 x = pd.read_csv("filePath")
 
 # Exporting a dataframe
-x.to_csv("y", index=False)
+x.to_csv("y", index=False) # y = the name of the new file
 
-#Describing data  ---- () for functions    without () for Attributes
+#Describing data  ---- with () for functions    without () for Attributes
 x.dtype #prints the dtype of each column
 x["column name"].dtype #prints the dtype of the chosen column
 x.columns #shows you the column's names
@@ -44,5 +44,10 @@ x["column name"] = x["column name"].str.replace('[\$\,\.]', '') #replacing a cha
 x["column name"] = x["column name"].str.replace('[\$\,\.]', '').astype(int) #replacing & changing the dtype
 
 #Graphs
-x["column name"].plot()
-x["column name"].hist()
+x.plot()
+x.hist()
+x.plot().bar()
+x.plot().bar(stacked=True)
+x["column name"].plot() # if I want a specific column
+
+
