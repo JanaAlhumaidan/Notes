@@ -2,7 +2,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt #if needed
 
-#2 main Data types: 
+# 2 main Data types: 
 #Series:
 x = pd.Series(["x", "y", "z"])
 # dataFarme (2D)
