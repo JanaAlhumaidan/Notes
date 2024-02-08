@@ -9,7 +9,7 @@ x = pd.Series(["x", "y", "z"])
 x = pd.DataFrame({"column name1": seriesName, "column name2": seriesName})
 
 #importing Data
-x = pd.read_csv("filePath")
+x = pd.read_csv(r"filePath")
 
 # Exporting a dataframe
 x.to_csv("y", index=False) # y = the name of the new file
@@ -50,4 +50,5 @@ x.plot().bar()
 x.plot().bar(stacked=True)
 x["column name"].plot() # if I want a specific column
 
-
+#Manipulating data
+x["column name"] = x["column name"].str.lower() #lower case
