@@ -2,7 +2,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt #if needed
 
-# 2 main Data types: 
+#2 main Data types: 
 #Series:
 x = pd.Series(["x", "y", "z"])
 # dataFarme (2D)
@@ -26,7 +26,7 @@ x.sum()
 x["column name"].sum() #if I want a specific column
 len(x) #no. of rows
 
-#Viewing and Selecting
+# Viewing and Selecting
 x.head() #prints the first 5 rows 
 x.head(y) # y = number >> if I want a specific no. of rows
 x.tail() #last 4 rows
@@ -38,7 +38,7 @@ x[x["column name"] == "object"] #prints the rows that has the chosen object in t
 x[x["column name"] > 100000] #prints the rows that goes with the rule in the chosen column
 pd.crosstab(x["column name1"], x["column name2"])
 
-#changing the dtype
+## changing the dtype
 x['column name'] = x['column name'].astype(str)
 x["column name"] = x["column name"].str.replace('[\$\,\.]', '') #replacing a char in a column
 x["column name"] = x["column name"].str.replace('[\$\,\.]', '').astype(int) #replacing & changing the dtype
